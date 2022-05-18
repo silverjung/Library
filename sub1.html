@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Library/css/reset.css">
+    <link rel="stylesheet" href="../Library/sub_nav.css">
+    <link rel="stylesheet" href="../Library/sub1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".menu_lnb_list").click(function(e){
+                e.preventDefault();
+                $(this).toggleClass("active").siblings("li").removeClass("active");
+                $(this).children(".lnb_depth2").toggleClass("hidden_depth");
+               $(this).siblings("li").children(".lnb_depth2").addClass("hidden_depth");
+            });
+
+            $('.list_2').click(function(e) {
+                e.preventDefault;
+                $('.depth2_1').slideToggle();
+            });
+            $('.list_3').click(function(e) {
+                e.preventDefault;
+                $('.depth2_2').slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1>
+                <span class="hidden">국립중앙도서관</span>
+            </h1>
+            <div class="h_top">
+                <div class="logo">
+                    <a href="https://silverjung.github.io/Library/main.html">
+                        <img src="images/sub_logo.png" alt="도서관로고">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">내서재</a></li>
+                    <li><a href="#">바구니</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="menu_depth1">
+                    <li>
+                        <a href="https://silverjung.github.io/Library/sub1.html">도서관 이용</a>
+                        <ul class="menu_depth2">
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">본관 이용시간 및 이용증 발급</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">본관 자료실 안내</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">디지털도서관 안내</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">도서관 일정</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">편의시절</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">자료복사</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">전시</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">자주하는 질문</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">설문조사</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">오류신고</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub1.html">분실물찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://silverjung.github.io/Library/sub2.html">자료검색</a>
+                        <ul class="menu_depth2">
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">주제별컬렉션</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">대한민국 신문 아카이브</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">관보</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">해외 한국 관련 기록물</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">OAK국가리포지터리</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">오아시스(OASIS)</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">책 읽어주는 도서관</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">전시컬렉션(온라인전시)</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">세계의 도서관</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub2.html">동아시아 디지털도서관(EADL)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://silverjung.github.io/Library/sub3.html">신청·참여</a>
+                        <ul class="menu_depth2">
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">자료신청안내</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">비치희망도서</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">상호대차</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">책다모아(기증)</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">저작권 이용허락</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">사서에게 물어보세요</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">인문열차,삶을 달리다</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">연구정보서비스</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">견학</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">예약</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">사회봉사</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">교육/문화프로그램</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">메일링서비스</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub3.html">연계 API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://silverjung.github.io/Library/sub4.html">디지털컬렉션</a>
+                        <ul class="menu_depth2">
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">소장자료</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">디지털화 자료</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">Web DB</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">신착자료</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">사서추천도서</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">영상자료 목록</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">국가자료종합목록</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">한국고전적종합목록</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">국가전자도서관</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">근대문학종합목록</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub4.html">국가서지 LOD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://silverjung.github.io/Library/sub5.html">도서관 소개</a>
+                        <ul class="menu_depth2">
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">국립중앙도서관</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">소속도서관</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">도서관 협력망</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">도서관소식</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">발간자료</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">정보공개</a></li>
+                            <li><a href="https://silverjung.github.io/Library/sub5.html">관내사이트 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_mobile">
+                <button type="button" class="btn_open">
+                    <span>전체 메뉴</span>
+                </button>
+                <div class="nav_all_m">
+                    <div class="header_util_m">
+                        <div class="personal_wrap">
+                            <em class="m_logo"><span>문화체육관광부 국립중앙도서관</span></em>
+                            <div class="login_bx"><strong>편리한 이용을 위해<br>로그인 또는 회원가입을 해주세요.</strong></div>
+                            <div class="login_bt">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_close">
+                            <span>
+                                전체버튼닫기
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu_all_inner">
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1 on">도서관 이용</a>
+                            <div class="m_all_depth1_cate on">
+                                <p>도서관 이용</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">소장자료</a></li>
+                                    <li><a href="#">디지털화 자료</a></li>
+                                    <li><a href="#">Web DB</a></li>
+                                    <li><a href="#">신착자료</a></li>
+                                    <li><a href="#">사서추천도서</a></li>
+                                    <li><a href="#">영상자료 목록</a></li>
+                                    <li><a href="#">국가자료종합목록</a></li>
+                                    <li><a href="#">한국고전적종합목록</a></li>
+                                    <li><a href="#">국가전자도서관</a></li>
+                                    <li><a href="#">근대문학종합목록</a></li>
+                                    <li><a href="#">국가서지 LOD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">자료검색</a>
+                            <div class="m_all_depth1_cate">
+                                <p>자료검색</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">주제별컬렉션</a></li>
+                                    <li><a href="#">대한민국 신문 아카이브</a></li>
+                                    <li><a href="#">관보</a></li>
+                                    <li><a href="#">해외 한국 관련 기록물</a></li>
+                                    <li><a href="#">OAK국가리포지터리</a></li>
+                                    <li><a href="#">오아시스(OASIS)</a></li>
+                                    <li><a href="#">책 읽어주는 도서관</a></li>
+                                    <li><a href="#">전시컬렉션(온라인전시)</a></li>
+                                    <li><a href="#">세계의 도서관</a></li>
+                                    <li><a href="#">동아시아 디지털도서관(EADL)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">신청·참여</a>
+                            <div class="m_all_depth1_cate">
+                                <p>신청·참여</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">자료신청안내</a></li>
+                                    <li><a href="#">비치희망도서</a></li>
+                                    <li><a href="#">상호대차</a></li>
+                                    <li><a href="#">책다모아(기증)</a></li>
+                                    <li><a href="#">저작권 이용허락</a></li>
+                                    <li><a href="#">사서에게 물어보세요</a></li>
+                                    <li><a href="#">인문열차,삶을 달리다</a></li>
+                                    <li><a href="#">연구정보서비스</a></li>
+                                    <li><a href="#">견학</a></li>
+                                    <li><a href="#">예약</a></li>
+                                    <li><a href="#">사회봉사</a></li>
+                                    <li><a href="#">교육/문화프로그램</a></li>
+                                    <li><a href="#">메일링서비스</a></li>
+                                    <li><a href="#">연계 API</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">디지털컬렉션</a>
+                            <div class="m_all_depth1_cate">
+                                <p>디지털컬렉션</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">본관 이용시간 및 이용증 발급</a></li>
+                                    <li><a href="#">본관 자료실 안내</a></li>
+                                    <li><a href="#">디지털도서관 안내</a></li>
+                                    <li><a href="#">도서관 일정</a></li>
+                                    <li><a href="#">편의시절</a></li>
+                                    <li><a href="#">자료복사</a></li>
+                                    <li><a href="#">전시</a></li>
+                                    <li><a href="#">자주하는 질문</a></li>
+                                    <li><a href="#">설문조사</a></li>
+                                    <li><a href="#">오류신고</a></li>
+                                    <li><a href="#">분실물찾기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">도서관 소개</a>
+                            <div class="m_all_depth1_cate">
+                                <p>도서관 소개</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">국립중앙도서관</a></li>
+                                    <li><a href="#">소속도서관</a></li>
+                                    <li><a href="#">도서관 협력망</a></li>
+                                    <li><a href="#">도서관소식</a></li>
+                                    <li><a href="#">발간자료</a></li>
+                                    <li><a href="#">정보공개</a></li>
+                                    <li><a href="#">관내사이트 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">내 서재</a>
+                            <div class="m_all_depth1_cate">
+                                <p>내 서재</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="">자료 신청내역</a></li>
+                                    <li><a href="">봉사·견학·교육 신청내역</a></li>
+                                    <li><a href="">도서관 방문 예약 (본관)</a></li>
+                                    <li><a href="">디지털도서관 예약 확인새창</a></li>
+                                    <li><a href="">메일링서비스</a></li>
+                                    <li><a href="">바구니</a></li>
+                                    <li><a href="">내가 이용한 자료</a></li>
+                                    <li><a href="">스크랩</a></li>
+                                    <li><a href="">사서에게물어보세요 질문내역</a></li>
+                                    <li><a href="">학술지목차메일링서비스</a></li>
+                                    <li><a href="">우리집 e서재</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">이용가이드</a>
+                            <div class="m_all_depth1_cate">
+                                <p>이용가이드</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">이렇게 달라졌어요</a></li>
+                                    <li><a href="#">구성 및 주요 서비스</a></li>
+                                    <li><a href="#">소장자료 통합검색</a></li>
+                                    <li><a href="#">원문 이용안내</a></li>
+                                    <li><a href="#">메뉴별 기능안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="m_site_map">사이트맵</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wide_search">
+            <div class="wide_search_cont">
+                <h2>도서관 이용</h2>
+                <div class="search_form_group">
+                    <form name="comSchForm" action="http://dmswjd9751/form.jsp">
+                        <div class="search_form">
+                            <label for="input_txt">검색어를 입력해주세요.</label>
+                            <input type="text" id="input_txt">
+                        </div>
+                        <div class="search_button">
+                            <button class="button_lang">
+                                <span>다국어입력기 열기</span>
+                            </button>
+                            <button class="button_search">
+                                <span>검색하기</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="page_menu">
+            <div class="menu_middle">
+                <div class="menu_group">
+                    <ul class="menu_box">
+                        <li class="menu_list list_1"><a href="#"><span class="list_home">home</span></a></li>
+                        <li class="menu_list list_2"><a href="#">도서관 이용</a>
+                            <ul class="page_menu_depth2 depth2_1">
+                                <li class="depth2_list"><a href="#">도서관 이용</a></li>
+                                <li class="depth2_list"><a href="#">자료검색</a></li>
+                                <li class="depth2_list"><a href="#">신청·참여</a></li>
+                                <li class="depth2_list"><a href="#">디지털컬렉션</a></li>
+                                <li class="depth2_list"><a href="#">도서관 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_list list_3"><a href="#">본관 이용시간 및 이용증 발급</a>
+                            <ul class="page_menu_depth2 depth2_2">
+                                <li class="depth2_list"><a href="#">본관 이용시간 및 이용증 발급</a></li>
+                                <li class="depth2_list"><a href="#">본관 자료실 안내</a></li>
+                                <li class="depth2_list"><a href="#">디지털도서관 안내</a></li>
+                                <li class="depth2_list"><a href="#">도서관 일정</a></li>
+                                <li class="depth2_list"><a href="#">편의시절</a></li>
+                                <li class="depth2_list"><a href="#">자료복사</a></li>
+                                <li class="depth2_list"><a href="#">전시</a></li>
+                                <li class="depth2_list"><a href="#">자주하는 질문</a></li>
+                                <li class="depth2_list"><a href="#">설문조사</a></li>
+                                <li class="depth2_list"><a href="#">오류신고</a></li>
+                                <li class="depth2_list"><a href="#">분실물찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button_group">
+                    <ul class="button_box">
+                        <li class="button_list"><a href="#"><span class="btn_print">인쇄</span></a></li>
+                        <li class="button_list"><a href="#"><span class="btn_scrap">스크랩</span></a></li>
+                        <li class="button_list"><a href="#"><span class="btn_share">공유</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--                                왼쪽 메뉴-->
+        <section class="contents">
+            <div class="lnb">
+                <h2>도서관 이용</h2>
+                <ul class="menu_lnb">
+                    <li class="menu_lnb_list add_list active"><a href="#" class="btn_plus">본관 이용시간 및 이용증 발급</a>
+                        <ul class="lnb_depth2">
+                            <li class="lnb_depth2_list"><a href="#">주간이용</a></li>
+                            <li class="lnb_depth2_list"><a href="#">야간이용</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">본관 자료실 안내</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">본관자료실 안내</a></li>
+                            <li class="lnb_depth2_list"><a href="#">준수사항</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">디지털도서관 안내</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">도서관소개</a></li>
+                            <li class="lnb_depth2_list"><a href="#">이용시간 및 절차</a></li>
+                            <li class="lnb_depth2_list"><a href="#">시설 및 예약안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">도서관 일정</a></li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">편의시절</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">식당</a></li>
+                            <li class="lnb_depth2_list"><a href="#">북카페</a></li>
+                            <li class="lnb_depth2_list"><a href="#">편의점</a></li>
+                            <li class="lnb_depth2_list"><a href="#">예식장 대관</a></li>
+                            <li class="lnb_depth2_list"><a href="#">주차안내</a></li>
+                            <li class="lnb_depth2_list"><a href="#">무선 인터넷</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">자료복사</a></li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">전시</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">전시</a></li>
+                            <li class="lnb_depth2_list"><a href="#">기록매체박물관</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">자주하는 질문</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">본관</a></li>
+                            <li class="lnb_depth2_list"><a href="#">디지털도서관</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">설문조사</a></li>
+                    <li class="menu_lnb_list"><a href="#">오류신고</a></li>
+                    <li class="menu_lnb_list"><a href="#">분실물찾기</a></li>
+                </ul>
+            </div>
+            <!--                                컨텐츠-->
+            <div class="sub_contents">
+                <div class="title">
+                    <h3>주간이용</h3>
+                </div>
+                <div class="section_all">
+                    <div class="section_cont">
+                        <div class="section_1">
+                            <span class="sub_title">이용대상</span>
+                            <div class="main_building_hours">
+                                <span>※ 코로나19 확산 방지로 인한 자료실 및 이용증발급실 운영 시간: 10:00~17:00</span>
+                                <p>정보이용 · 조사 · 연구 등을 목적으로 소장 도서관자료를 이용하고자 하는 만 16세 이상인 자<br>단, 만 16세 미만(초등학생 이하 제외)인 자가 조사 · 연구를 목적으로 도서관을 방문하였을 경우<br>「청소년 자료이용 신청서」작성 후 출입 가능(학생증, 청소년증 등 본인확인이 가능한 신분증 지참)</p>
+                            </div>
+                        </div>
+                        <div class="section_2">
+                            <span class="sub_title">이용대상</span>
+                            <div class="hours_use_table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>자료실</th>
+                                            <th class="s"></th>
+                                            <th>이용 시간</th>
+                                            <th class="s"></th>
+                                            <th>휴관일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>도서자료실</strong>(인문 · 사회 · 자연과학)<br>
+                                                <strong>
+                                                    연속간행물실
+                                                </strong>(잡지 · 신문 · 공공간행물)<br>
+                                                <strong>문학실</strong>
+                                                <br>
+                                                <strong>장애인정보누리터</strong>
+                                            </td>
+                                            <td class="s"></td>
+                                            <td><strong>월요일 ~ 일요일 09:00 ~ 18:00</strong><br>
+                                                - 단, '3층 연속간행물실(서고자료대출반납)',<br>'4층 도서자료실(서고자료대출반납)'의 경우 자료신청 후 이용<br>
+                                                (자료신청 09:00 ~ 17:00)</td>
+                                            <td class="s none"></td>
+                                            <td rowspan="2"><strong>- 정기 휴관 : 매월 둘째 · 넷째 월요일</strong><br>
+                                                - 일요일을 제외한 관공서의 공휴일<br>
+                                                (※설 연휴와 추석 연휴 기간 중 일요일은 휴관)<br>
+                                                - 기타 관장이 필요하다고 인정하는 날</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>고문헌실</strong></td>
+                                            <td class="s"></td>
+                                            <td><strong>월요일 ~ 일요일 09:00 ~ 18:00<br></strong>자료신청 후 이용 (자료신청 09:00 ~ 17:00)</td>
+                                            <td class="s"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>북한자료센터</strong></td>
+                                            <td class="s"></td>
+                                            <td><strong>월요일 ~ 토요일 09:00 ~ 18:00</strong></td>
+                                            <td class="s"></td>
+                                            <td><strong>- 정기휴관 : 매월 둘째 · 넷째 월요일<br>
+                                                    - 매주 일요일</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="section_3">
+                            <span class="sub_title">이용증 발급</span>
+                            <p>※ 이용증은 국립중앙도서관 본관과 디지털도서관 공통으로 이용<br>※ I-PIN 또는 휴대폰을 통한 본인인증 없이 회원가입을 원하는 경우 본인 신분증을 소지하고 도서관에 방문하여 이용증 발급 가능</p>
+                            <ul class="dot_list">
+                                <li class="dot_no">
+                                    <div class="kind_usecard">
+                                        <ul class="usecard_box">
+                                            <li class="usecard_list">
+                                                <div class="contents_box">
+                                                    <span class="usecard_title">일일 이용증</span>
+                                                    <p class="contents_1">1일 사용 후 반납</p>
+                                                </div>
+                                            </li>
+                                            <li class="usecard_list">
+                                                <div class="contents_box">
+                                                    <span class="usecard_title">정기 이용증</span>
+                                                    <p class="contents_2">-유효기간 내에 계속 사용<br>※ 유효기간 : 마지막 이용일로부터 5년</p>
+                                                    <p class="contents_2">※ 정기 이용증을 직접 수령하기 어려운 경우<br>대리인이 위임장, 신청인 신분증, 대리인 신분증<br>을 지참한 후 이용증 발급실에서 대리 수령 가능</p>
+                                                </div>
+                                            </li>
+                                            <li class="usecard_list">
+                                                <div class="contents_box">
+                                                    <span class="usecard_title">모바일 이용증</span>
+                                                    <p class="contents_3">- 회원가입 후 이용증 발급실 방문없이 모바일을 통하여 즉시 발급<br>- 일일이용증 및 정기이용증 사용자도 모바일 이용증 발급 가능<br>※ 유효기간 : 마지막 이용일로부터 5년<br>※ 이용 가능 서비스 : 도서관 입·출입, 외출, 관내대출반납, 야간도서관 이용</p>
+                                                    <p class="red_txt contents_3">※ 출력·복사 서비스, 복합상영관·세미나실·스튜디오, 비도서대출 이용자는 일일이용증 또는 정기이용증을 발급 받아 사용하셔야 합니다.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dot_no">
+                                    <span class="card_issue">신규 발급자</span>
+                                    <div class="new_card">
+                                        <span class="give_card">① 직접발급</span>
+                                        <ul class="new_card_box">
+                                            <li class="new_card_list">
+                                                <span class="card_num">01</span>
+                                                <span class="card_txt">홈페이지 회원가입</span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">02</span>
+                                                <span class="card_txt card_1">이용증 발급실에서 본인확인<br>
+                                                    <span class="blue_txt">준비물: 신분증(주민등록증, 여권)등</span></span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">03</span>
+                                                <span class="card_txt">이용증 발급</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="new_card">
+                                        <span class="give_card">② 온라인발급</span>
+                                        <ul class="new_card_box">
+                                            <li class="new_card_list">
+                                                <span class="card_num">01</span>
+                                                <span class="card_txt">홈페이지 회원가입</span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">02</span>
+                                                <span class="card_txt card_2">모바일 웹/앱에서 로그인<br>
+                                                    <span class="blue_txt">준비물: 스마트폰</span>
+                                                </span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">03</span>
+                                                <span class="card_txt card_3">모바일 이용증 버튼클릭</span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">04</span>
+                                                <span class="card_txt">이용증 발급</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dot_no">
+                                    <span class="card_issue">
+                                        재발급자
+                                    </span>
+                                    <div class="new_card">
+                                        <ul class="new_card_box">
+                                            <li class="new_card_list">
+                                                <span class="card_num">01</span>
+                                                <span class="card_txt card_txt_2">이용증 발급실에<br>분실처리 요청<br>방문 또는 전화<br>(02-590-0708)</span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">02</span>
+                                                <span class="card_txt card_txt_3">
+                                                    <span>
+                                                        <strong>
+                                                            ① 정기 이용증
+                                                        </strong><br>
+                                                        <span>
+                                                            (이용증 발급실에 재발급 신청서,수수료 납부서, <br>신분증 제출 및 확인)
+                                                        </span>
+                                                    </span><br>
+                                                    <span>
+                                                        <strong>
+                                                            ② 일일 이용증
+                                                        </strong><br>
+                                                        <span>
+                                                            (이용증 발급실에 분실 신청서 제출)
+                                                        </span>
+                                                    </span><br>
+                                                    <span>
+                                                        <strong>
+                                                            ③ 모바일 이용증
+                                                        </strong><br>
+                                                        <span>
+                                                            (모바일 앱/웹에서 모바일 이용증 발급)
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li class="new_card_list">
+                                                <span class="card_num">03</span>
+                                                <span class="card_txt card_txt_4">이용증 발급</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section_4">
+                            <span class="sub_title">자료이용</span>
+                            <div class="use_materials_table">
+                                <ul class="use_materials_box">
+                                    <li class="materials_list"><span class="materials_title">개가제 자료</span>
+                                        <span class="materials_txt">직접 검색 · 열람 가능<br>
+                                            문학실, 연속간행물실, 도서자료실,고문헌실</span>
+                                    </li>
+                                    <li class="materials_list">
+                                        <span class="materials_title">폐가제 자료</span>
+                                        <span class="materials_txt">자료검색 후 '자료당일신청'하여 이용<br>도서자료실(서고자료대출반납), 연속간행물실<br>(서고자료대출반납), 보존용자료, 고문헌실</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                ※ 보존용 자료 및 자료실명(보존)으로 표기된 자료는 평일이용은 자료당일신청, 주말이용은 금요일에 주말예약 후 이용가능<br>고문헌실(보존) 자료는 예약자료로 신청 3일 후 평일 이용가능(주말 및 야간 이용불가)<br>※ 자료복사는 해당 자료실내에 설치되어 있는 복사실에서 가능(저작권법에 따라 부분 복사만 가능)<br>※ 국립중앙도서관 소장자료는 도서관내에서 이용 가능(관외 대출 불가)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_util">
+                <ul class="util_list">
+                    <li><a href="#">원격헬프데스크</a></li>
+                    <li><a href="#">국민신문고</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">누리집이용가이드</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="policy_wrap">
+                <ul class="policy_list">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">국립중앙도서관 윤리강령</a></li>
+                    <li><a href="#">도서관법령</a></li>
+                    <li><a href="#">이용봉사헌장</a></li>
+                    <li><a href="#">사전정보공개</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                </ul>
+            </div>
+            <div class="policy_add">
+                <address>우편번호 06579 서울시 서초구 반포대로 201(반포동)</address>
+                <p>문의전화 02-590-0500 팩스 02-590-0530</p>
+                <p>Copyright© National Library of Korea. All rights reserved.</p>
+            </div>
+            <div class="policy_img">
+                <ul class="img_box">
+                    <li class="img_list footer_wa">
+                        <a href="#">
+                            <img src="images/footer_wa.png" alt="">
+                        </a>
+                    </li>
+                    <li class="img_list footer_open">
+                        <a href="#">
+                            <img src="images/footer_open.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

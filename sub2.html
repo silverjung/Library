@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Library/css/reset.css">
+    <link rel="stylesheet" href="../Library/sub_nav.css">
+    <link rel="stylesheet" href="../Library/sub2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu_lnb_list').click(function(e) {
+                e.preventDefault();
+                if ($(this).hasClass('active')) {
+                    $(this).find('.hidden_depth').stop().slideUp(300);
+                    $(this).removeClass('active');
+                } else {
+                    $(this).find('.hidden_depth').stop().slideDown(300);
+                    $(this).addClass('active');
+                }
+            });
+            $('.list_2').click(function(e) {
+                e.preventDefault;
+                $('.depth2_1').slideToggle();
+            });
+            $('.list_3').click(function(e) {
+                e.preventDefault;
+                $('.depth2_2').slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1>
+                <span class="hidden">국립중앙도서관</span>
+            </h1>
+            <div class="h_top">
+                <div class="logo">
+                    <a href="http://dmswjd9751.dothome.co.kr/Library/main.html">
+                        <img src="images/sub_logo.png" alt="도서관로고">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">내서재</a></li>
+                    <li><a href="#">바구니</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="menu_depth1">
+                    <li>
+                        <a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">도서관 이용</a>
+                        <ul class="menu_depth2">
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">본관 이용시간 및 이용증 발급</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">본관 자료실 안내</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">디지털도서관 안내</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">도서관 일정</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">편의시절</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">자료복사</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">전시</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">자주하는 질문</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">설문조사</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">오류신고</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_1.html">분실물찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">자료검색</a>
+                        <ul class="menu_depth2">
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">주제별컬렉션</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">대한민국 신문 아카이브</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">관보</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">해외 한국 관련 기록물</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">OAK국가리포지터리</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">오아시스(OASIS)</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">책 읽어주는 도서관</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">전시컬렉션(온라인전시)</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">세계의 도서관</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_2.html">동아시아 디지털도서관(EADL)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">신청·참여</a>
+                        <ul class="menu_depth2">
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">자료신청안내</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">비치희망도서</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">상호대차</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">책다모아(기증)</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">저작권 이용허락</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">사서에게 물어보세요</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">인문열차,삶을 달리다</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">연구정보서비스</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">견학</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">예약</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">사회봉사</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">교육/문화프로그램</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">메일링서비스</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_3.html">연계 API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">디지털컬렉션</a>
+                        <ul class="menu_depth2">
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">소장자료</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">디지털화 자료</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">Web DB</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">신착자료</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">사서추천도서</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">영상자료 목록</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">국가자료종합목록</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">한국고전적종합목록</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">국가전자도서관</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">근대문학종합목록</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_4.html">국가서지 LOD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">도서관 소개</a>
+                        <ul class="menu_depth2">
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">국립중앙도서관</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">소속도서관</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">도서관 협력망</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">도서관소식</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">발간자료</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">정보공개</a></li>
+                            <li><a href="http://dmswjd9751.dothome.co.kr/Library/sub_5.html">관내사이트 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_mobile">
+                <button type="button" class="btn_open">
+                    <span>전체 메뉴</span>
+                </button>
+                <div class="nav_all_m">
+                    <div class="header_util_m">
+                        <div class="personal_wrap">
+                            <em class="m_logo"><span>문화체육관광부 국립중앙도서관</span></em>
+                            <div class="login_bx"><strong>편리한 이용을 위해<br>로그인 또는 회원가입을 해주세요.</strong></div>
+                            <div class="login_bt">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_close">
+                            <span>
+                                전체버튼닫기
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu_all_inner">
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1 on">도서관 이용</a>
+                            <div class="m_all_depth1_cate on">
+                                <p>도서관 이용</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">소장자료</a></li>
+                                    <li><a href="#">디지털화 자료</a></li>
+                                    <li><a href="#">Web DB</a></li>
+                                    <li><a href="#">신착자료</a></li>
+                                    <li><a href="#">사서추천도서</a></li>
+                                    <li><a href="#">영상자료 목록</a></li>
+                                    <li><a href="#">국가자료종합목록</a></li>
+                                    <li><a href="#">한국고전적종합목록</a></li>
+                                    <li><a href="#">국가전자도서관</a></li>
+                                    <li><a href="#">근대문학종합목록</a></li>
+                                    <li><a href="#">국가서지 LOD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">자료검색</a>
+                            <div class="m_all_depth1_cate">
+                                <p>자료검색</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">주제별컬렉션</a></li>
+                                    <li><a href="#">대한민국 신문 아카이브</a></li>
+                                    <li><a href="#">관보</a></li>
+                                    <li><a href="#">해외 한국 관련 기록물</a></li>
+                                    <li><a href="#">OAK국가리포지터리</a></li>
+                                    <li><a href="#">오아시스(OASIS)</a></li>
+                                    <li><a href="#">책 읽어주는 도서관</a></li>
+                                    <li><a href="#">전시컬렉션(온라인전시)</a></li>
+                                    <li><a href="#">세계의 도서관</a></li>
+                                    <li><a href="#">동아시아 디지털도서관(EADL)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">신청·참여</a>
+                            <div class="m_all_depth1_cate">
+                                <p>신청·참여</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">자료신청안내</a></li>
+                                    <li><a href="#">비치희망도서</a></li>
+                                    <li><a href="#">상호대차</a></li>
+                                    <li><a href="#">책다모아(기증)</a></li>
+                                    <li><a href="#">저작권 이용허락</a></li>
+                                    <li><a href="#">사서에게 물어보세요</a></li>
+                                    <li><a href="#">인문열차,삶을 달리다</a></li>
+                                    <li><a href="#">연구정보서비스</a></li>
+                                    <li><a href="#">견학</a></li>
+                                    <li><a href="#">예약</a></li>
+                                    <li><a href="#">사회봉사</a></li>
+                                    <li><a href="#">교육/문화프로그램</a></li>
+                                    <li><a href="#">메일링서비스</a></li>
+                                    <li><a href="#">연계 API</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">디지털컬렉션</a>
+                            <div class="m_all_depth1_cate">
+                                <p>디지털컬렉션</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">본관 이용시간 및 이용증 발급</a></li>
+                                    <li><a href="#">본관 자료실 안내</a></li>
+                                    <li><a href="#">디지털도서관 안내</a></li>
+                                    <li><a href="#">도서관 일정</a></li>
+                                    <li><a href="#">편의시절</a></li>
+                                    <li><a href="#">자료복사</a></li>
+                                    <li><a href="#">전시</a></li>
+                                    <li><a href="#">자주하는 질문</a></li>
+                                    <li><a href="#">설문조사</a></li>
+                                    <li><a href="#">오류신고</a></li>
+                                    <li><a href="#">분실물찾기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">도서관 소개</a>
+                            <div class="m_all_depth1_cate">
+                                <p>도서관 소개</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">국립중앙도서관</a></li>
+                                    <li><a href="#">소속도서관</a></li>
+                                    <li><a href="#">도서관 협력망</a></li>
+                                    <li><a href="#">도서관소식</a></li>
+                                    <li><a href="#">발간자료</a></li>
+                                    <li><a href="#">정보공개</a></li>
+                                    <li><a href="#">관내사이트 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">내 서재</a>
+                            <div class="m_all_depth1_cate">
+                                <p>내 서재</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="">자료 신청내역</a></li>
+                                    <li><a href="">봉사·견학·교육 신청내역</a></li>
+                                    <li><a href="">도서관 방문 예약 (본관)</a></li>
+                                    <li><a href="">디지털도서관 예약 확인새창</a></li>
+                                    <li><a href="">메일링서비스</a></li>
+                                    <li><a href="">바구니</a></li>
+                                    <li><a href="">내가 이용한 자료</a></li>
+                                    <li><a href="">스크랩</a></li>
+                                    <li><a href="">사서에게물어보세요 질문내역</a></li>
+                                    <li><a href="">학술지목차메일링서비스</a></li>
+                                    <li><a href="">우리집 e서재</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_all_depth1">
+                            <a href="#" class="depth1">이용가이드</a>
+                            <div class="m_all_depth1_cate">
+                                <p>이용가이드</p>
+                                <ul class="m_all_depth2">
+                                    <li><a href="#">이렇게 달라졌어요</a></li>
+                                    <li><a href="#">구성 및 주요 서비스</a></li>
+                                    <li><a href="#">소장자료 통합검색</a></li>
+                                    <li><a href="#">원문 이용안내</a></li>
+                                    <li><a href="#">메뉴별 기능안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="m_site_map">사이트맵</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wide_search">
+            <div class="wide_search_cont">
+                <h2>자료검색</h2>
+                <div class="search_form_group">
+                    <form name="comSchForm" action="http://dmswjd9751/form.jsp">
+                        <div class="search_form">
+                            <label for="input_txt">검색어를 입력해주세요.</label>
+                            <input type="text" id="input_txt">
+                        </div>
+                        <div class="search_button">
+                            <button class="button_lang">
+                                <span>다국어입력기 열기</span>
+                            </button>
+                            <button class="button_search">
+                                <span>검색하기</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="page_menu">
+            <div class="menu_middle">
+                <div class="menu_group">
+                    <ul class="menu_box">
+                        <li class="menu_list list_1"><a href="#"><span class="list_home">home</span></a></li>
+                        <li class="menu_list list_2"><a href="#">자료검색</a>
+                            <ul class="page_menu_depth2 depth2_1">
+                                <li class="depth2_list"><a href="#">도서관 이용</a></li>
+                                <li class="depth2_list"><a href="#">자료검색</a></li>
+                                <li class="depth2_list"><a href="#">신청·참여</a></li>
+                                <li class="depth2_list"><a href="#">디지털컬렉션</a></li>
+                                <li class="depth2_list"><a href="#">도서관 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_list list_3"><a href="#">소장자료</a>
+                            <ul class="page_menu_depth2 depth2_2">
+                                <li class="depth2_list"><a href="#">소장자료</a></li>
+                                <li class="depth2_list"><a href="#">Web DB</a></li>
+                                <li class="depth2_list"><a href="#">신착자료</a></li>
+                                <li class="depth2_list"><a href="#">사서추천도서</a></li>
+                                <li class="depth2_list"><a href="#">영상자료 목록</a></li>
+                                <li class="depth2_list"><a href="#">국가자료종합목록</a></li>
+                                <li class="depth2_list"><a href="#">한국고전적종합목록</a></li>
+                                <li class="depth2_list"><a href="#">국가전자도서관</a></li>
+                                <li class="depth2_list"><a href="#">근대문학종합목록</a></li>
+                                <li class="depth2_list"><a href="#">국가서지 LOD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button_group">
+                    <ul class="button_box">
+                        <li class="button_list"><a href="#"><span class="btn_print">인쇄</span></a></li>
+                        <li class="button_list"><a href="#"><span class="btn_scrap">스크랩</span></a></li>
+                        <li class="button_list"><a href="#"><span class="btn_share">공유</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="lnb">
+                <h2>자료검색</h2>
+                <ul class="menu_lnb">
+                    <li class="menu_lnb_list active"><a href="#">소장자료</a></li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">Web DB</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">통합검색</a></li>
+                            <li class="lnb_depth2_list"><a href="#">국외DB</a></li>
+                            <li class="lnb_depth2_list"><a href="#">국내DB</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">신착자료</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">신착자료</a></li>
+                            <li class="lnb_depth2_list"><a href="#">신착자료(학술기사)</a></li>
+                            <li class="lnb_depth2_list"><a href="#">맞춤형 신착자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">사서추천도서</a></li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">영상자료 목록</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">주제별 목록</a></li>
+                            <li class="lnb_depth2_list"><a href="#">영화목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">국가자료종합목록</a></li>
+                    <li class="menu_lnb_list"><a href="#">한국고전적종합목록</a>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">국가전자도서관</a>
+                    </li>
+                    <li class="menu_lnb_list add_list"><a href="#" class="btn_plus">근대문학종합목록</a>
+                        <ul class="lnb_depth2 hidden_depth">
+                            <li class="lnb_depth2_list"><a href="#">서비스 소개</a></li>
+                            <li class="lnb_depth2_list"><a href="#">작가/작품정보</a></li>
+                            <li class="lnb_depth2_list"><a href="#">자료검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_lnb_list"><a href="#">국가서지 LOD</a></li>
+                </ul>
+            </div>
+            <!--                                      컨텐츠-->
+            <div class="sub_contents">
+                <div class="title">
+                    <h3>소장자료</h3>
+                </div>
+                <div class="search_notice">
+                    <p>국립중앙도서관에서 소장하고 있는 국내외 자료를 통합검색할 수 있습니다.<br>검색 대상 항목은 도서, 고서/고문서, 학위논문, 잡지/학술지, 신문 기사, 멀티미디어,<br>장애인자료, 외부연계자료, 웹사이트 수집, 기타, 해외한국관련기록물 등이 있습니다.</p>
+                </div>
+                <div class="section_all">
+                    <div class="section_cont">
+                        <div class="section_1">
+                            <span class="sub_title">설명</span>
+                            <div class="sub_box">
+                                <ul>
+                                    <li class="ex_list">
+                                        <span class="short_btn">목차정보</span>
+                                        <p class=explanation>검색된 자료의 목차자료가 구축되어 있으면 목차정보 탭이 나타납니다.<br>목차정보 탭을 클릭하면 해당 자료의 목차 내용을 볼 수 있습니다.</p>
+                                    </li>
+                                    <li class="ex_list ex_list_2">
+                                        <span class="short_btn">초록정보</span>
+                                        <p class=explanation>검색된 자료의 초록자료가 구축되어 있으면 간략목록 페이지에 초록 버튼이 나타납니다.<br>초록정보 버튼을 클릭하면 내용을 볼 수 있습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section_2">
+                            <span class="sub_title">원문 이용안내</span>
+                            <div class="original_text_table">
+                                <ul class="text_box">
+                                    <li class="text_list">협약도서관(열람, 인쇄 시 과금)</li>
+                                    <li class="text_list">협약도서관(인쇄 시 과금)</li>
+                                    <li class="text_list">협약공공도서관, 정기이용증 소지자(무료)</li>
+                                    <li class="text_list">국립중앙도서관(무료)</li>
+                                    <li class="text_list">모두 이용(무료)</li>
+                                    <li class="text_list">작은도서관(농산어촌)(무료)</li>
+                                    <li class="text_list">국립어린이청소년도서관(무료)</li>
+                                    <li class="text_list">국립어린이청소년도서관, 작은도서관(농산어촌)(무료)</li>
+                                    <li class="text_list">국립중앙도서관, 정기이용증소지자(무료)</li>
+                                    <li class="text_list">국립중앙도서관, 국립어린이청소년도서관, 국립세종도서관(무료)</li>
+                                    <li class="text_list">국립중앙도서관, 국립어린이청소년도서관, 국립세종도서관, 정기이용증 소지자(무료)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_util">
+                <ul class="util_list">
+                    <li><a href="#">원격헬프데스크</a></li>
+                    <li><a href="#">국민신문고</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">누리집이용가이드</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="policy_wrap">
+                <ul class="policy_list">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">국립중앙도서관 윤리강령</a></li>
+                    <li><a href="#">도서관법령</a></li>
+                    <li><a href="#">이용봉사헌장</a></li>
+                    <li><a href="#">사전정보공개</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                </ul>
+            </div>
+            <div class="policy_add">
+                <address>우편번호 06579 서울시 서초구 반포대로 201(반포동)</address>
+                <p>문의전화 02-590-0500 팩스 02-590-0530</p>
+                <p>Copyright© National Library of Korea. All rights reserved.</p>
+            </div>
+            <div class="policy_img">
+                <ul class="img_box">
+                    <li class="img_list footer_wa">
+                        <a href="#">
+                            <img src="images/footer_wa.png" alt="">
+                        </a>
+                    </li>
+                    <li class="img_list footer_open">
+                        <a href="#">
+                            <img src="images/footer_open.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
