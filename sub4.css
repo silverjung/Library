@@ -315,6 +315,12 @@ button{
 .category_box{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category_list{
+    width: 48%;
+    padding-bottom: 15px;
 }
 .category_box button{
     position: absolute;
