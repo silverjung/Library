@@ -309,12 +309,12 @@ button{
     padding-top: 7rem;
 }
 .category_swipe{
-    width: 80rem;
     margin: 0 auto;
     padding-top: 3rem;
 }
 .category_box{
     position: relative;
+    display: flex;
 }
 .category_box button{
     position: absolute;
@@ -331,9 +331,6 @@ button{
 .category_box button.slick-next{
     right: -3.2rem;
     background-position: -94px -108px;
-}
-.category_list{
-    float: left;
 }
 .category_list>a>img{
     width: 93%;
